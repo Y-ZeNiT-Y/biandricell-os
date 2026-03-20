@@ -163,7 +163,7 @@ export default function App() {
         <div className="max-w-4xl mx-auto flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
           <div className="flex items-center gap-4">
             <img 
-              src="/logo.png" 
+              src="public/logo.png" 
               alt="Biandricell" 
               className="h-16 sm:h-20 w-auto object-contain rounded-xl bg-white p-1.5"
               onError={(e) => {
