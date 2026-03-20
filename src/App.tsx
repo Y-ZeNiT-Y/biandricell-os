@@ -408,6 +408,17 @@ export default function App() {
         <div ref={printRef} style={{ color: '#000000', backgroundColor: '#ffffff' }} className="w-[800px] p-12 font-sans min-h-[1131px]">
           <div className="flex justify-between items-start border-b-4 border-[#000000] pb-6 mb-8">
           <div>
+            <div className="flex items-center gap-4 mb-6">
+              <img 
+                src="./logo.png" 
+                alt="Biandricell" 
+                className="h-14 w-auto object-contain"
+                onError={(e) => {
+                  e.currentTarget.style.display = 'none';
+                }}
+              />
+              <h2 className="text-3xl font-black tracking-widest text-[#0f172a]">BIANDRICELL</h2>
+            </div>
             <h1 className="text-4xl font-black uppercase tracking-tighter mb-2">Ordem de Serviço</h1>
             <p className="text-xl font-bold text-[#4b5563]">Data: {os.date}</p>
           </div>
